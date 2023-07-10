@@ -22,12 +22,12 @@ const tipos = [
     ruta: "dth-report",
   },
   {
-    id: 3,
+    id: 4,
     nombre: "GPON",
     ruta: "gpon-report",
   },
   {
-    id: 4,
+    id: 5,
     nombre: "HFC",
     ruta: "hfc-report",
   },

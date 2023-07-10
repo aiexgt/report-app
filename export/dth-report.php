@@ -19,7 +19,7 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
         $sheet = $document->getSheet(0);
 
         $columnas = array(
-            "A" => "archivo",
+            "A" => "orden_de_servicio",
             "B" => "marca_temporal",
             "C" => "puntuacion",
             "D" => "fecha",
@@ -29,79 +29,71 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
             "H" => "nombre_de_tecnico",
             "I" => "nombre_del_supervisor",
             "J" => "orden_de_servicio",
-            "K" => "tornillos_ajustados",
-            "L" => "antena_sin_danios_o_torceduras",
-            "M" => "fijacion_en_norma",
-            "N" => "uso_de_dos_cinchos_plasticos",
-            "O" => "orientacion_correcta",
-            "P" => "torque_correcto_del_conector_homologado",
-            "Q" => "capuchon_instalado_correctamente",
-            "R" => "uso_de_cable_homologado",
-            "S" => "uso_de_conectores_homologados",
-            "T" => "cable_sin_uniones_ni_spliter",
-            "U" => "bordeado_y_uso_de_grapas_correcto",
-            "V" => "potencia_y_calidad_mayor_a_80",
-            "W" => "transpondedor_11130",
-            "X" => "transpondedor_11170",
-            "Y" => "transpondedor_11190",
-            "Z" => "transpondedor_11134",
-            "AA" => "transpondedor_11174",
-            "AB" => "transpondedor_11050",
-            "AC" => "transpondedor_11010",
-            "AD" => "revision_del_estado_del_cable_rca",
-            "AE" => "instalacion_y_conexion_en_norma_del_stb",
-            "AF" => "peladora_rg-6_homologada",
-            "AG" => "ponchadora_rg-6_homologada",
-            "AH" => "brujula",
-            "AI" => "nivel_de_alto_impacto",
-            "AJ" => "escalera",
-            "AK" => "brocas_para_concreto",
-            "AL" => "equipo_buscador_de_senal",
-            "AM" => "taladro_con_rotomartillo",
-            "AN" => "extension_electrica_de_20_metros",
-            "AO" => "guia_de_acero_de_30_metros",
-            "AP" => "corta_alambre",
-            "AQ" => "pinza",
-            "AR" => "alicate",
-            "AS" => "navaja_curva_tipo_cuma",
-            "AT" => "destornilladores",
-            "AU" => "broca_pasa_muros_12_pulgadas_1_2_o_3_8",
-            "AV" => "camisa",
-            "AW" => "pantalon",
-            "AX" => "botas",
-            "AY" => "gafete",
-            "AZ" => "faja",
-            "BA" => "chaleco_preventivo",
-            "BB" => "casco_de_proteccion",
-            "BC" => "capa_impermeable",
-            "BD" => "aspecto_personal",
-            "BE" => "logotipo_de_empresa",
-            "BF" => "carroceria",
-            "BG" => "porta_escalera",
-            "BH" => "estado_de_neumaticos",
-            "BI" => "rotulado_de_unidad",
-            "BJ" => "orden_y_limpieza",
-            "BK" => "logotipo",
-            "BL" => "estado_de_carroceria",
-            "BM" => "focos",
-            "BN" => "parrilla",
-            "BO" => "casco",
-            "BP" => "pide_via",
-            "BQ" => "luces_laterales",
-            "BR" => "estado_de_las_llantas",
-            "BS" => "stop_traseros",
-            "BT" => "tecnico_certificado_por_claro",
-            "BU" => "evidencia_fotografica",
-            "BV" => "segundo_archivo",
-            "BW" => "calidad_tecnica",
-            "BX" => "herramienta",
-            "BY" => "uniforme",
-            "BZ" => "vehiculo",
-            "CA" => "tecnico_certificado",
-            "CB" => "no_supervision",
-            "CC" => "tecnologia",
-            "CD" => "supervisor",
-            "CE" => "observaciones"
+            "K" => "instalacion_de_antena_en_superficie_o_mastil_adecuado",
+            "L" => "utilizacion_de_materiales_normado_por_claro",
+            "M" => "fijacion_de_antena_anclaje_en_norma",
+            "N" => "instalacion_de_lnb_en_norma",
+            "O" => "linea_vista_adecuada",
+            "P" => "resane_de_superficie_de_techo",
+            "Q" => "limpieza_del_area_de_trabajo_materiales_sobrantes",
+            "R" => "instalacion_de_cable_nuevo_normado_por_claro",
+            "S" => "uso_de_conectores_nuevos_normados_por_claro",
+            "T" => "correcta_aplicacion_de_conectores",
+            "U" => "estetica_en_la_instalacion_del_cableado",
+            "V" => "instalacion_de_cables_rg_06_sin_uniones",
+            "W" => "uso_adecuado_de_grapas",
+            "X" => "cliente_permite_acceso",
+            "Y" => "instalaciones_de_cada_uno_de_los_equipos_contratados",
+            "Z" => "nivel_de_calidad_70_se_encontro_gt_90_nivel_de_calidad_optima",
+            "AA" => "nivel_de_potencia_70_se_encontro_gt_90_nivel_de_calidad_optima",
+            "AB" => "calcomania_colocada_en_stb",
+            "AC" => "verificacion_de_paquetes_contratados_canales",
+            "AD" => "instalacion_y_conexion_adecuada_del_stb",
+            "AE" => "peladora_rg_6_homologada",
+            "AF" => "ponchadora_rg_6_homologada",
+            "AG" => "brujula",
+            "AH" => "nivel_de_alto_impacto",
+            "AI" => "escalera",
+            "AJ" => "brocas_para_concreto",
+            "AK" => "equipo_buscador_de_senal",
+            "AL" => "taladro_con_rotomartillo",
+            "AM" => "extension_electrica_de_20_metros",
+            "AN" => "guia_acerada_de_30_metros",
+            "AO" => "corta_alambre",
+            "AP" => "pinza",
+            "AQ" => "alicate",
+            "AR" => "navaja_curva_tipo_cuma",
+            "AS" => "destornilladores",
+            "AT" => "broca_pasa_muros_12_pulgadas_1_2_o_3_8",
+            "AU" => "camisa",
+            "AV" => "pantalon",
+            "AW" => "botas",
+            "AX" => "gafete",
+            "AY" => "faja",
+            "AZ" => "chaleco_preventivo",
+            "BA" => "casco_de_proteccion",
+            "BB" => "capa_impermeable",
+            "BC" => "aspecto_personal",
+            "BD" => "logotipo_de_empresa",
+            "BE" => "carroceria",
+            "BF" => "porta_escalera",
+            "BG" => "estado_de_neumaticos",
+            "BH" => "rotulado_de_unidad",
+            "BI" => "orden_y_limpieza",
+            "BJ" => "tecnico_certificado_por_claro",
+            "BK" => "direccion_de_correo_electronico",
+            "BL" => "evidencia_fotografica",
+            "BM" => "segundo_archivo",
+            "BN" => "tercer_archivo",
+            "BO" => "calidad_tecnica",
+            "BP" => "herramienta",
+            "BQ" => "uniforme",
+            "BR" => "vehiculo",
+            "BS" => "tecnico_certificado",
+            "BT" => "no_supervision",
+            "BU" => "tecnologia",
+            "BV" => "supervisor",
+            "BW" => "observaciones"
         );
 
         $i = 3;
@@ -123,7 +115,7 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                 <!DOCTYPE html>
                 <html>
                 <head>
-                    <title>Auditoria DTH REPA</title>
+                    <title>Auditoria DTH</title>
             ';
 
             $html .= getComponentStyle();
@@ -149,7 +141,7 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                             <div class="cell">
                                 <img src="../src/assets/img/logo.png" style="width:80px;">
                             </div>
-                            <div class="cell text-center" colspan="4"><h4>** Evaluación de Calidad Técnica DTH Reparaciones **</h4></div>
+                            <div class="cell text-center" colspan="4"><h4>** Evaluación de Calidad Técnica DTH Instalaciones **</h4></div>
                             <div class="cell" style="width:80px;"></div>
                         </div>
                         <div class="row">
@@ -219,176 +211,189 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="w-20 text-center" rowspan="4">Revisión física de antena</td>
-                                            <td class="w-10 text-center" rowspan="4">20</td>
-                                            <td class="w-40">Tornillos ajustados</td>
+                                            <td class="w-20 text-center" rowspan="7">ANTENA</td>
+                                            <td class="w-10 text-center" rowspan="7">35</td>
+                                            <td class="w-40">Instalación de antena en superficie o mastil adecuado</td>
                                             <td class="w-10 text-center">5</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['tornillos_ajustados']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['tornillos_ajustados']),5).'</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['instalacion_de_antena_en_superficie_o_mastil_adecuado']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['instalacion_de_antena_en_superficie_o_mastil_adecuado']),5).'</td>
                                         </tr>
                                         <tr>
-                                            <td class="w-40">Antena sin daños o torceduras</td>
+                                            <td class="w-40">Utilizacion de materiales Normado por CLARO</td>
                                             <td class="w-10 text-center">5</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['antena_sin_danios_o_torceduras']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['antena_sin_danios_o_torceduras']),5).'</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['utilizacion_de_materiales_normado_por_claro']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['utilizacion_de_materiales_normado_por_claro']),5).'</td>
                                         </tr>
                                         <tr>
-                                            <td class="w-40">Fijación en norma</td>
+                                            <td class="w-40">Fijación de antena (anclaje) en norma</td>
                                             <td class="w-10 text-center">5</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['fijacion_en_norma']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['fijacion_en_norma']),5).'</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['fijacion_de_antena_anclaje_en_norma']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['fijacion_de_antena_anclaje_en_norma']),5).'</td>
                                         </tr>
                                         <tr>
-                                            <td class="w-40">Uso de dos cinchos plásticos</td>
+                                            <td class="w-40">Instalación de LNB en norma</td>
                                             <td class="w-10 text-center">5</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['uso_de_dos_cinchos_plasticos']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['uso_de_dos_cinchos_plasticos']),5).'</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['instalacion_de_lnb_en_norma']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['instalacion_de_lnb_en_norma']),5).'</td>
                                         </tr>
                                         <tr>
-                                            <td class="w-20 text-center" rowspan="3">LNB</td>
-                                            <td class="w-10 text-center" rowspan="3">20</td>
-                                            <td class="w-40">Orientación correcta</td>
-                                            <td class="w-10 text-center">10</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['orientacion_correcta']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['orientacion_correcta']),10).'</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w-40">Torque correcto del conector homologado</td>
+                                            <td class="w-40">Linea vista adecuada</td>
                                             <td class="w-10 text-center">5</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['torque_correcto_del_conector_homologado']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['torque_correcto_del_conector_homologado']),5).'</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['linea_vista_adecuada']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['linea_vista_adecuada']),5).'</td>
                                         </tr>
                                         <tr>
-                                            <td class="w-40">Capuchón instalado correctamente</td>
+                                            <td class="w-40">Resane de superficie de techo</td>
                                             <td class="w-10 text-center">5</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['capuchon_instalado_correctamente']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['capuchon_instalado_correctamente']),5).'</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['resane_de_superficie_de_techo']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['resane_de_superficie_de_techo']),5).'</td>
                                         </tr>
                                         <tr>
-                                            <td class="w-20 text-center" rowspan="4">CABLEADO</td>
-                                            <td class="w-10 text-center" rowspan="4">20</td>
-                                            <td class="w-40">Uso de cable homologado</td>
+                                            <td class="w-40">Limpieza del área de trabajo, materiales sobrantes</td>
                                             <td class="w-10 text-center">5</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['uso_de_cable_homologado']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['uso_de_cable_homologado']),5).'</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['limpieza_del_area_de_trabajo_materiales_sobrantes']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['limpieza_del_area_de_trabajo_materiales_sobrantes']),5).'</td>
                                         </tr>
                                         <tr>
-                                            <td class="w-40">Uso de conectores homologados</td>
+                                            <td class="w-20 text-center" rowspan="6">ACOMETIDA EXTERNA</td>
+                                            <td class="w-10 text-center" rowspan="6">30</td>
+                                            <td class="w-40">Instalación de cable "nuevo", normado por Claro</td>
                                             <td class="w-10 text-center">5</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['uso_de_conectores_homologados']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['uso_de_conectores_homologados']),5).'</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['instalacion_de_cable_nuevo_normado_por_claro']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['instalacion_de_cable_nuevo_normado_por_claro']),5).'</td>
                                         </tr>
                                         <tr>
-                                            <td class="w-40">Cable sin uniones ni spliter</td>
+                                            <td class="w-40">Uso de conectores "nuevos", normados por Claro</td>
                                             <td class="w-10 text-center">5</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['cable_sin_uniones_ni_spliter']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['cable_sin_uniones_ni_spliter']),5).'</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['uso_de_conectores_nuevos_normados_por_claro']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['uso_de_conectores_nuevos_normados_por_claro']),5).'</td>
                                         </tr>
                                         <tr>
-                                            <td class="w-40">Bordeado y uso de grapas correcto</td>
+                                            <td class="w-40">Correcta aplicacion de conectores</td>
                                             <td class="w-10 text-center">5</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['bordeado_y_uso_de_grapas_correcto']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['bordeado_y_uso_de_grapas_correcto']),5).'</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['correcta_aplicacion_de_conectores']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['correcta_aplicacion_de_conectores']),5).'</td>
                                         </tr>
                                         <tr>
-                                            <td class="w-20 text-center" rowspan="10">EQUIPO</td>
-                                            <td class="w-10 text-center" rowspan="10">40</td>
-                                            <td class="w-40">Potencia y calidad mayor a 80</td>
+                                            <td class="w-40">Estetica en la instalación del cableado</td>
                                             <td class="w-10 text-center">5</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['potencia_y_calidad_mayor_a_80']).'</td>
-                                            <td class="w-100 text-center">'.mostrarPunteo(($value['potencia_y_calidad_mayor_a_80']),5).'</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['estetica_en_la_instalacion_del_cableado']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['estetica_en_la_instalacion_del_cableado']),5).'</td>
                                         </tr>
                                         <tr>
-                                            <td class="w-40">Transpondedor 11130</td>
-                                            <td class="w-10 text-center">4</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['transpondedor_11130']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['transpondedor_11130']),4).'</td>
+                                            <td class="w-40">Instalacion de cables RG-06 sin uniones</td>
+                                            <td class="w-10 text-center">5</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['instalacion_de_cables_rg_06_sin_uniones']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['instalacion_de_cables_rg_06_sin_uniones']),5).'</td>
                                         </tr>
                                         <tr>
-                                            <td class="w-40">Transpondedor 11170</td>
-                                            <td class="w-10 text-center">4</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['transpondedor_11170']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['transpondedor_11170']),4).'</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w-40">Transpondedor 11190</td>
-                                            <td class="w-10 text-center">4</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['transpondedor_11190']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['transpondedor_11190']),4).'</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w-40">Transpondedor 11134</td>
-                                            <td class="w-10 text-center">4</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['transpondedor_11134']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['transpondedor_11134']),4).'</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w-40">Transpondedor 11174</td>
-                                            <td class="w-10 text-center">4</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['transpondedor_11174']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['transpondedor_11174']),4).'</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w-40">Transpondedor 11050</td>
-                                            <td class="w-10 text-center">4</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['transpondedor_11050']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['transpondedor_11050']),4).'</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w-40">Transpondedor 11010</td>
-                                            <td class="w-10 text-center">4</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['transpondedor_11010']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['transpondedor_11010']),4).'</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w-40">Revisión del estado del cable RCA</td>
-                                            <td class="w-10 text-center">4</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['revision_del_estado_del_cable_rca']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['revision_del_estado_del_cable_rca']),4).'</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w-40">Instalación y conexión en norma del STB</td>
-                                            <td class="w-10 text-center">3</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['instalacion_y_conexion_en_norma_del_stb']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['instalacion_y_conexion_en_norma_del_stb']),3).'</td>
-                                        </tr>
-                ';
-                
-                $total = 0 
-                + mostrarPunteo(($value['tornillos_ajustados']),5)
-                + mostrarPunteo(($value['antena_sin_danios_o_torceduras']),5)
-                + mostrarPunteo(($value['fijacion_en_norma']),5)
-                + mostrarPunteo(($value['uso_de_dos_cinchos_plasticos']),5)
-                + mostrarPunteo(($value['orientacion_correcta']),10)
-                + mostrarPunteo(($value['torque_correcto_del_conector_homologado']),5)
-                + mostrarPunteo(($value['capuchon_instalado_correctamente']),5)
-                + mostrarPunteo(($value['uso_de_cable_homologado']),5)
-                + mostrarPunteo(($value['uso_de_conectores_homologados']),5)
-                + mostrarPunteo(($value['cable_sin_uniones_ni_spliter']),5)
-                + mostrarPunteo(($value['bordeado_y_uso_de_grapas_correcto']),5)
-                + mostrarPunteo(($value['potencia_y_calidad_mayor_a_80']),5)
-                + mostrarPunteo(($value['transpondedor_11130']),4)
-                + mostrarPunteo(($value['transpondedor_11170']),4)
-                + mostrarPunteo(($value['transpondedor_11190']),4)
-                + mostrarPunteo(($value['transpondedor_11134']),4)
-                + mostrarPunteo(($value['transpondedor_11174']),4)
-                + mostrarPunteo(($value['transpondedor_11050']),4)
-                + mostrarPunteo(($value['transpondedor_11010']),4)
-                + mostrarPunteo(($value['revision_del_estado_del_cable_rca']),4)
-                + mostrarPunteo(($value['instalacion_y_conexion_en_norma_del_stb']),3);
-                                        
-                $html .= '
-                                        <tr>
-                                            <td class="w-20 fw">TOTAL</td>
-                                            <td class="w-10 text-center fw">100</td>
-                                            <td class="w-40"></td>
-                                            <td class="w-10"></td>
-                                            <td class="w-10"></td>
-                                            <td class="w-10 text-center fw">'.$total.'</td>
+                                            <td class="w-40">Uso adecuado de grapas</td>
+                                            <td class="w-10 text-center">5</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['uso_adecuado_de_grapas']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['uso_adecuado_de_grapas']),5).'</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
+                        </div>
+                ';
+                                        
+                $html .= '          
+                    </div>
+                    <div class="container">
+                        <div class="cell-table" colspan="6">
+                            <table>
+                            <tbody>
+                            <tr class="bg-secondary">
+                                <td colspan="4" class="w-80 text-center">CLIENTE PERMITE ACCESO</td>
+                                <td class="text-center">'.mostrarRespuesta($value['cliente_permite_acceso']).'</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                                <thead>
+                                    <tr>
+                                        <th class="w-20">Área</th>
+                                        <th class="w-10">POND.</th>
+                                        <th class="w-40">Descripción</th>
+                                        <th class="w-10">POND.</th>
+                                        <th class="w-10">Respuesta</th>
+                                        <th class="w-10">Puntos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="w-20 text-center" rowspan="6">ACOMETIDA INTERNA</td>
+                                        <td class="w-10 text-center" rowspan="6">30</td>
+                                        <td class="w-40">Instalaciones de cada uno de los  de equipos contratados</td>
+                                        <td class="w-10 text-center">5</td>
+                                        <td class="w-10 text-center">'.mostrarRespuesta($value['instalaciones_de_cada_uno_de_los_equipos_contratados']).'</td>
+                                        <td class="w-10 text-center">'.mostrarPunteo(($value['instalaciones_de_cada_uno_de_los_equipos_contratados']),5).'</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-40">Nivel de calidad ≥ 70%, se encontro: // GT ≥90    // Nivel de calidad óptima</td>
+                                        <td class="w-10 text-center">5</td>
+                                        <td class="w-10 text-center">'.mostrarRespuesta($value['nivel_de_calidad_70_se_encontro_gt_90_nivel_de_calidad_optima']).'</td>
+                                        <td class="w-10 text-center">'.mostrarPunteo(($value['nivel_de_calidad_70_se_encontro_gt_90_nivel_de_calidad_optima']),5).'</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-40">Nivel de potencia ≥ 70%, se encontro: // GT≥90   // Nivel de calidad óptima</td>
+                                        <td class="w-10 text-center">5</td>
+                                        <td class="w-10 text-center">'.mostrarRespuesta($value['nivel_de_potencia_70_se_encontro_gt_90_nivel_de_calidad_optima']).'</td>
+                                        <td class="w-10 text-center">'.mostrarPunteo(($value['nivel_de_potencia_70_se_encontro_gt_90_nivel_de_calidad_optima']),5).'</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-40">Calcomania colocada en STB</td>
+                                        <td class="w-10 text-center">5</td>
+                                        <td class="w-10 text-center">'.mostrarRespuesta($value['calcomania_colocada_en_stb']).'</td>
+                                        <td class="w-10 text-center">'.mostrarPunteo(($value['calcomania_colocada_en_stb']),5).'</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-40">Verificacion de paquetes contratados ( Canales)</td>
+                                        <td class="w-10 text-center">5</td>
+                                        <td class="w-10 text-center">'.mostrarRespuesta($value['verificacion_de_paquetes_contratados_canales']).'</td>
+                                        <td class="w-10 text-center">'.mostrarPunteo(($value['verificacion_de_paquetes_contratados_canales']),5).'</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-40">Instalación y conexión adecuada del STB</td>
+                                        <td class="w-10 text-center">5</td>
+                                        <td class="w-10 text-center">'.mostrarRespuesta($value['instalacion_y_conexion_adecuada_del_stb']).'</td>
+                                        <td class="w-10 text-center">'.mostrarPunteo(($value['instalacion_y_conexion_adecuada_del_stb']),5).'</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <div class="cell" colspan="6"><br></div>
+                        </div>
+
+                ';
+
+                $total = 0
+                + mostrarPunteo(($value['instalacion_de_antena_en_superficie_o_mastil_adecuado']),5)
+                + mostrarPunteo(($value['utilizacion_de_materiales_normado_por_claro']),5)
+                + mostrarPunteo(($value['fijacion_de_antena_anclaje_en_norma']),5)
+                + mostrarPunteo(($value['instalacion_de_lnb_en_norma']),5)
+                + mostrarPunteo(($value['linea_vista_adecuada']),5)
+                + mostrarPunteo(($value['resane_de_superficie_de_techo']),5)
+                + mostrarPunteo(($value['limpieza_del_area_de_trabajo_materiales_sobrantes']),5)
+                + mostrarPunteo(($value['instalacion_de_cable_nuevo_normado_por_claro']),5)
+                + mostrarPunteo(($value['uso_de_conectores_nuevos_normados_por_claro']),5)
+                + mostrarPunteo(($value['correcta_aplicacion_de_conectores']),5)
+                + mostrarPunteo(($value['estetica_en_la_instalacion_del_cableado']),5)
+                + mostrarPunteo(($value['instalacion_de_cables_rg_06_sin_uniones']),5)
+                + mostrarPunteo(($value['uso_adecuado_de_grapas']),5)
+                + mostrarPunteo(($value['instalaciones_de_cada_uno_de_los_equipos_contratados']),5)
+                + mostrarPunteo(($value['nivel_de_calidad_70_se_encontro_gt_90_nivel_de_calidad_optima']),5)
+                + mostrarPunteo(($value['nivel_de_potencia_70_se_encontro_gt_90_nivel_de_calidad_optima']),5)
+                + mostrarPunteo(($value['calcomania_colocada_en_stb']),5)
+                + mostrarPunteo(($value['verificacion_de_paquetes_contratados_canales']),5)
+                + mostrarPunteo(($value['instalacion_y_conexion_adecuada_del_stb']),5);
+
+                $html .= '
+                        <div class="row">
+                            <div class="cell">Observaciónes: </div>
+                            <div class="cell cb" colspan="4">'.$value['observaciones'].'</div>
+                            <div class="cell cb text-center">'.$total.'</div>
                         </div>
                     </div>
                 ';
@@ -427,6 +432,45 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                             <div class="row">
                                 <div class="cell text-center">
                                     <img src="'.$value['segundo_archivo'].'" class="evidencia">
+                                </div>
+                            </div>
+                        </div>
+                    ';
+                }
+
+                if($value['tercer_archivo'] != ''){
+
+                    $value['tercer_archivo'] = str_replace('open','uc',$value['tercer_archivo']);
+                    $html .= '
+                        <div style="page-break-after:always;"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="cell">
+                                    <img src="../src/assets/img/logo.png" style="width:80px;">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell text-center">
+                                    <img src="'.$value['tercer_archivo'].'" class="evidencia">
+                                </div>
+                            </div>
+                        </div>
+                    ';
+                }
+
+                if($value['cuarto_archivo'] != ''){
+
+                    $html .= '
+                        <div style="page-break-after:always;"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="cell">
+                                    <img src="../src/assets/img/logo.png" style="width:80px;">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell text-center">
+                                    <img src="'.$value['cuarto_archivo'].'" class="evidencia">
                                 </div>
                             </div>
                         </div>
@@ -929,12 +973,31 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                         ';
                     }
 
+                    if($value['tercer_archivo'] != ''){
+
+                        $html .= '
+                            <div style="page-break-after:always;"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="cell">
+                                        <img src="../src/assets/img/logo.png" style="width:80px;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell text-center">
+                                        <img src="'.$value['tercer_archivo'].'" class="evidencia">
+                                    </div>
+                                </div>
+                            </div>
+                        ';
+                    }
+
 
                 }
 
                 if(
-                    ($value['peladora_rg-6_homologada'] != '' && $value['peladora_rg-6_homologada'] != 'N/A')
-                    || ($value['ponchadora_rg-6_homologada'] != '' && $value['ponchadora_rg-6_homologada'] != 'N/A')
+                    ($value['peladora_rg_6_homologada'] != '' && $value['peladora_rg_6_homologada'] != 'N/A')
+                    || ($value['ponchadora_rg_6_homologada'] != '' && $value['ponchadora_rg_6_homologada'] != 'N/A')
                     || ($value['brujula'] != '' && $value['brujula'] != 'N/A')
                     || ($value['nivel_de_alto_impacto'] != '' && $value['nivel_de_alto_impacto'] != 'N/A')
                     || ($value['escalera'] != '' && $value['escalera'] != 'N/A')
@@ -942,7 +1005,7 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                     || ($value['equipo_buscador_de_senal'] != '' && $value['equipo_buscador_de_senal'] != 'N/A')
                     || ($value['taladro_con_rotomartillo'] != '' && $value['taladro_con_rotomartillo'] != 'N/A')
                     || ($value['extension_electrica_de_20_metros'] != '' && $value['extension_electrica_de_20_metros'] != 'N/A')
-                    || ($value['guia_de_acero_de_30_metros'] != '' && $value['guia_de_acero_de_30_metros'] != 'N/A')
+                    || ($value['guia_acerada_de_30_metros'] != '' && $value['guia_acerada_de_30_metros'] != 'N/A')
                     || ($value['corta_alambre'] != '' && $value['corta_alambre'] != 'N/A')
                     || ($value['pinza'] != '' && $value['pinza'] != 'N/A')
                     || ($value['alicate'] != '' && $value['alicate'] != 'N/A')
@@ -1023,14 +1086,14 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                                                 <tr>
                                                     <td class="w-40">Peladora RG-6 homologada</td>
                                                     <td class="w-20 text-center">5</td>
-                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['peladora_rg-6_homologada']).'</td>
-                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['peladora_rg-6_homologada']), 5).'</td>
+                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['peladora_rg_6_homologada']).'</td>
+                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['peladora_rg_6_homologada']), 5).'</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="w-40">Ponchadora RG-6 homologada</td>
                                                     <td class="w-20 text-center">5</td>
-                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['ponchadora_rg-6_homologada']).'</td>
-                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['ponchadora_rg-6_homologada']), 5).'</td>
+                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['ponchadora_rg_6_homologada']).'</td>
+                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['ponchadora_rg_6_homologada']), 5).'</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="w-40">Brujula</td>
@@ -1077,8 +1140,8 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                                                 <tr>
                                                     <td class="w-40">Guia de acero de 30 metros </td>
                                                     <td class="w-20 text-center">5</td>
-                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['guia_de_acero_de_30_metros']).'</td>
-                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['guia_de_acero_de_30_metros']), 5).'</td>
+                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['guia_acerada_de_30_metros']).'</td>
+                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['guia_acerada_de_30_metros']), 5).'</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="w-40">Corta Alambre</td>
@@ -1119,8 +1182,8 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                         ';
             
                         $total = 0 
-                        + mostrarPunteo(($value['peladora_rg-6_homologada']), 5)
-                        + mostrarPunteo(($value['ponchadora_rg-6_homologada']), 5)
+                        + mostrarPunteo(($value['peladora_rg_6_homologada']), 5)
+                        + mostrarPunteo(($value['ponchadora_rg_6_homologada']), 5)
                         + mostrarPunteo(($value['brujula']), 10)
                         + mostrarPunteo(($value['nivel_de_alto_impacto']), 10)
                         + mostrarPunteo(($value['escalera']), 5)
@@ -1128,7 +1191,7 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                         + mostrarPunteo(($value['equipo_buscador_de_senal']), 25)
                         + mostrarPunteo(($value['taladro_con_rotomartillo']), 10)
                         + mostrarPunteo(($value['extension_electrica_de_20_metros']), 5)
-                        + mostrarPunteo(($value['guia_de_acero_de_30_metros']), 5)
+                        + mostrarPunteo(($value['guia_acerada_de_30_metros']), 5)
                         + mostrarPunteo(($value['corta_alambre']), 2)
                         + mostrarPunteo(($value['pinza']), 2)
                         + mostrarPunteo(($value['alicate']), 2)
@@ -1173,7 +1236,6 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                         }
 
                         if($value['segundo_archivo'] != ''){
-
                             $html .= '
                                 <div style="page-break-after:always;"></div>
                                 <div class="container">
@@ -1185,6 +1247,25 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                                     <div class="row">
                                         <div class="cell text-center">
                                             <img src="'.$value['segundo_archivo'].'" class="evidencia">
+                                        </div>
+                                    </div>
+                                </div>
+                            ';
+                        }
+
+                        if($value['tercer_archivo'] != ''){
+
+                            $html .= '
+                                <div style="page-break-after:always;"></div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="cell">
+                                            <img src="../src/assets/img/logo.png" style="width:80px;">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="cell text-center">
+                                            <img src="'.$value['tercer_archivo'].'" class="evidencia">
                                         </div>
                                     </div>
                                 </div>
