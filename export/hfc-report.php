@@ -29,67 +29,85 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
             "H" => "nombre_de_tecnico",
             "I" => "nombre_del_supervisor",
             "J" => "orden_de_servicio",
-            "K" => "ubicacion_de_puerto_en_base_a_red_asignada",
-            "L" => "instalacion_fibra_en_infraestructura_existente_postes",
-            "M" => "estetica_general_de_la_instalacion_cableado",
-            "N" => "uso_de_conectores_nuevos_normados_por_claro",
-            "O" => "nivel_de_potencia_optica_en_puerto_asignado_en_nap",
-            "P" => "nivel_de_potencia_optica_en_roseta_optica",
-            "Q" => "colocacion_de_roseta_optica",
-            "R" => "colocacion_de_patchcore_en_roseta_optica_ont",
-            "S" => "colocacion_de_ont_en_casa_del_cliente",
-            "T" => "nivel_de_potencia_optica_en_patch_cord_entrada_ont",
-            "U" => "medicion_de_velocidad_en_base_a_lo_solicitado_por_el_cliente_verificacion_de_funcionamienteo_de_internet_velocidad_contratada_telefonia_funcionamiento_tv_paquetes_contratados",
-            "V" => "colocacion_de_cables_utp_en_ont",
-            "W" => "colocacion_de_stb_en_casa_del_cliente",
-            "X" => "medidor_de_potencia_optica",
-            "Y" => "microscopio_optico",
-            "Z" => "etiquetadora",
-            "AA" => "tijera_para_cortar_kevlar",
-            "AB" => "barreno_con_roto_martillo",
-            "AC" => "cortadora_fo_angulo_recto",
-            "AD" => "peladora_de_fo_3_en_1",
-            "AE" => "cortadora_de_buffer",
-            "AF" => "kit_de_limpieza_para_fibra_optica",
-            "AG" => "escalera_de_fibra_de_vidrio_20",
-            "AH" => "juego_de_destornilladores_de_castigadera_y_phillips",
-            "AI" => "juego_de_brocas_para_concreto_y_metal_diferentes_medidas_incluir_broca_pasa_muro",
-            "AJ" => "extension_electrica_calibre_12",
-            "AK" => "guia_acerada_125_con_dispensador",
-            "AL" => "guia_pasa_cables_de_fibra_de_vidrio",
-            "AM" => "gancho_para_levantar_tapaderas_pozo_resultado",
-            "AN" => "camisa",
-            "AO" => "casco",
-            "AP" => "pantalon",
-            "AQ" => "cinturon_de_seguridad_para_amarre_a_poste",
-            "AR" => "botas_industriales",
-            "AS" => "gafete",
-            "AT" => "faja_cincho",
-            "AU" => "chaleco_preventivo",
-            "AV" => "guantes_de_cuero",
-            "AW" => "capa_impermeable",
-            "AX" => "aspecto_personal",
-            "AY" => "logotipo_de_empresa",
-            "AZ" => "carroceria",
-            "BA" => "porta_escalera",
-            "BB" => "estado_de_neumaticos",
-            "BC" => "rotulado_de_unidad",
-            "BD" => "orden_y_limpieza",
-            "BE" => "tecnico_certificado",
-            "BF" => "evidencia_fotografica",
-            "BG" => "segundo_archivo",
-            "BH" => "tercer_archivo",
-            "BI" => "tecnico_certificado_por_claro",
-            "BJ" => "cuarto_archivo",
-            "BK" => "calidad_tecnica",
-            "BL" => "herramienta",
-            "BM" => "uniforme",
-            "BN" => "vehiculo",
-            "BO" => "tecnico_certificado",
-            "BP" => "no_supervision",
-            "BQ" => "tecnologia",
-            "BR" => "supervisor",
-            "BS" => "observaciones"
+            "K" => "ubicacion_del_tap_rg_500_mas_cerca_del_cliente_por_distancia",
+            "L" => "identificacion_de_la_red",
+            "M" => "cable_pasa_por_chapa",
+            "N" => "utilizo_cincho_id_e_identifico",
+            "O" => "curvatura_de_reserva_adecuada",
+            "P" => "protectores_de_humedad",
+            "Q" => "torqueado_en_norma",
+            "R" => "utilizo_filtro_pasa_alto_ventana",
+            "S" => "correcta_elaboracion_de_conector",
+            "T" => "uso_de_abrazaderas_de_remate_aplica_red_aerea",
+            "U" => "instalacion_de_cable_correcto_con_mensajero_sin_mensajero",
+            "V" => "uso_de_conector_nuevo_normado_por_claro",
+            "W" => "utilizo_remates_y_clip_tipo_s",
+            "X" => "ausencia_de_rozamiento_con_otros_elementos",
+            "Y" => "tensado_de_cables_y_uso_de_postes",
+            "Z" => "acometida_sin_empalmes",
+            "AA" => "cliente_permite_acceso",
+            "AB" => "se_cambio_el_cableado",
+            "AC" => "se_utilizo_el_cable_correcto",
+            "AD" => "estetica_en_la_instalacion_del_cableado",
+            "AE" => "se_instalaron_protectores_contra_picos_hr_y_cpe",
+            "AF" => "torqueado_de_accesorios_de_distribucion",
+            "AG" => "uso_adecuado_de_grapas",
+            "AH" => "uso_correcto_de_divisores_de_senal_aplica_para_mas_de_un_tv",
+            "AI" => "correcta_aplicacion_de_conectores",
+            "AJ" => "conexion_adecuada_del_stb",
+            "AK" => "segun_os_se_cumplio_con_la_cantidad_de_televisores_instalados",
+            "AL" => "segun_la_orden_de_servicio_se_dejaron_los_equipos_solicitados_repetidor_wifi_dvr",
+            "AM" => "conexion_y_configuracion_adecuada_de_cable_modem",
+            "AN" => "el_cable_modem_tiene_niveles_correctos",
+            "AO" => "evidencia_fotografica",
+            "AP" => "segundo_archivo",
+            "AQ" => "peladora_rg_6",
+            "AR" => "ponchadora_rg_6",
+            "AS" => "equipo_de_medicion",
+            "AT" => "desarmadores_destornilladores",
+            "AU" => "escalera",
+            "AV" => "lazo_para_asegurar_escalera_a_poste",
+            "AW" => "taladro_tipo_industrial_de_1_2",
+            "AX" => "extension_electrica_de_15_metros",
+            "AY" => "guia_de_acero_de_30_metros",
+            "AZ" => "broca_pasa_muros_12_pulgadas_1_2_o_3_8",
+            "BA" => "llave_quita_trampas",
+            "BB" => "herramienta_torquimetro",
+            "BC" => "navaja_curva",
+            "BD" => "corta_alambre_de_8",
+            "BE" => "cadena_con_candados_asegurar_escalera_a_vehiculo",
+            "BF" => "inversor_de_voltaje_de_1600_watts",
+            "BG" => "camisa",
+            "BH" => "pantalon",
+            "BI" => "botas",
+            "BJ" => "gafete",
+            "BK" => "faja_cincho",
+            "BL" => "chaleco_preventivo",
+            "BM" => "casco_de_proteccion",
+            "BN" => "guantes_de_cuero",
+            "BO" => "capa_impermeable",
+            "BP" => "aspecto_personal",
+            "BQ" => "logotipo_de_empresa",
+            "BR" => "carroceria",
+            "BS" => "porta_escalera",
+            "BT" => "estado_de_neumaticos",
+            "BU" => "rotulado_de_unidad",
+            "BV" => "orden_y_limpieza",
+            "BW" => "tecnico_certificado_por_claro",
+            "BX" => "direccion_de_correo_electronico",
+            "BY" => "evidencia_fotografica",
+            "BZ" => "segundo_archivo",
+            "CA" => "tercer_archivo",
+            "CB" => "cuarto_archivo",
+            "CC" => "calidad_tecnica",
+            "CD" => "herramienta",
+            "CE" => "uniforme",
+            "CF" => "vehiculo",
+            "CG" => "tecnico_certificado",
+            "CH" => "no_supervision",
+            "CI" => "tecnologia",
+            "CJ" => "supervisor",
+            "CK" => "observaciones"
         );
 
         $i = 3;
@@ -111,7 +129,7 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                 <!DOCTYPE html>
                 <html>
                 <head>
-                    <title>Auditoria GPON</title>
+                    <title>Auditoria HFC</title>
             ';
 
             $html .= getComponentStyle();
@@ -207,142 +225,257 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="w-20 text-center">NAP</td>
-                                            <td class="w-10 text-center">5</td>
-                                            <td class="w-40">Ubicación de puerto en base a red asignada</td>
-                                            <td class="w-10 text-center">5</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['ubicacion_de_puerto_en_base_a_red_asignada']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['ubicacion_de_puerto_en_base_a_red_asignada']),5).'</td>
+                                            <td class="w-20 text-center" rowspan="9">TAP</td>
+                                            <td class="w-10 text-center" rowspan="9">25</td>
+                                            <td class="w-40">Ubicación del Tap RG-500 más cerca del cliente por distancia</td>
+                                            <td class="w-10 text-center">4</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['ubicacion_del_tap_rg_500_mas_cerca_del_cliente_por_distancia']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['ubicacion_del_tap_rg_500_mas_cerca_del_cliente_por_distancia']),4).'</td>
                                         </tr>
                                         <tr>
-                                            <td class="w-20 text-center" rowspan="5">ACOMENTIDA</td>
-                                            <td class="w-10 text-center" rowspan="5">45</td>
-                                            <td class="w-40">Instalación Fibra en Infraestructura existente (Postes)</td>
-                                            <td class="w-10 text-center">5</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['instalacion_fibra_en_infraestructura_existente_postes']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['instalacion_fibra_en_infraestructura_existente_postes']),5).'</td>
+                                            <td class="w-40">Identificación de la red</td>
+                                            <td class="w-10 text-center">4</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['identificacion_de_la_red']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['identificacion_de_la_red']),4).'</td>
                                         </tr>
                                         <tr>
-                                            <td class="w-40">Estetica general de la instalación (Cableado) </td>
-                                            <td class="w-10 text-center">5</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['estetica_general_de_la_instalacion_cableado']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['estetica_general_de_la_instalacion_cableado']),5).'</td>
+                                            <td class="w-40">Cable pasa por chapa</td>
+                                            <td class="w-10 text-center">2</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['cable_pasa_por_chapa']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['cable_pasa_por_chapa']),2).'</td>
                                         </tr>
                                         <tr>
-                                            <td class="w-40">Uso de conectores "nuevos", normados por Claro</td>
-                                            <td class="w-10 text-center">10</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['uso_de_conectores_nuevos_normados_por_claro']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['uso_de_conectores_nuevos_normados_por_claro']),10).'</td>
+                                            <td class="w-40">Utilizo cincho ID e identifico</td>
+                                            <td class="w-10 text-center">2</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['utilizo_cincho_id_e_identifico']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['utilizo_cincho_id_e_identifico']),2).'</td>
                                         </tr>
                                         <tr>
-                                            <td class="w-40">Nivel de potencia óptica en puerto asignado en NAP </td>
-                                            <td class="w-10 text-center">15</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['nivel_de_potencia_optica_en_puerto_asignado_en_nap']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['nivel_de_potencia_optica_en_puerto_asignado_en_nap']),15).'</td>
+                                            <td class="w-40">Curvatura de reserva adecuada</td>
+                                            <td class="w-10 text-center">4</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['curvatura_de_reserva_adecuada']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['curvatura_de_reserva_adecuada']),4).'</td>
                                         </tr>
                                         <tr>
-                                            <td class="w-40">Nivel de potencia óptica en roseta óptica </td>
-                                            <td class="w-10 text-center">10</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['nivel_de_potencia_optica_en_roseta_optica']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['nivel_de_potencia_optica_en_roseta_optica']),10).'</td>
+                                            <td class="w-40">Protectores de humedad</td>
+                                            <td class="w-10 text-center">2</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['protectores_de_humedad']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['protectores_de_humedad']),2).'</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-40">Torqueado en norma</td>
+                                            <td class="w-10 text-center">3</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['torqueado_en_norma']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['torqueado_en_norma']),3).'</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-40">Utilizo filtro pasa alto / ventana</td>
+                                            <td class="w-10 text-center">2</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['utilizo_filtro_pasa_alto_ventana']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['utilizo_filtro_pasa_alto_ventana']),2).'</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-40">Correcta elaboración de conector</td>
+                                            <td class="w-10 text-center">2</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['correcta_elaboracion_de_conector']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['correcta_elaboracion_de_conector']),2).'</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-20 text-center" rowspan="7">ACOMENTIDA EXTERNA</td>
+                                            <td class="w-10 text-center" rowspan="7">25</td>
+                                            <td class="w-40">Uso de abrazaderas  de remate (aplica red aérea)*</td>
+                                            <td class="w-10 text-center">4</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['uso_de_abrazaderas_de_remate_aplica_red_aerea']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['uso_de_abrazaderas_de_remate_aplica_red_aerea']),4).'</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-40">Instalación de cable correcto (con mensajero/sin mensajero)</td>
+                                            <td class="w-10 text-center">4</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['instalacion_de_cable_correcto_con_mensajero_sin_mensajero']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['instalacion_de_cable_correcto_con_mensajero_sin_mensajero']),4).'</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-40">Uso de conector  "nuevo", normado por Claro</td>
+                                            <td class="w-10 text-center">4</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['uso_de_conector_nuevo_normado_por_claro']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['uso_de_conector_nuevo_normado_por_claro']),4).'</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-40">Utilizo remates y clip tipo S</td>
+                                            <td class="w-10 text-center">3</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['utilizo_remates_y_clip_tipo_s']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['utilizo_remates_y_clip_tipo_s']),3).'</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-40">Ausencia de rozamiento con otros  elementos </td>
+                                            <td class="w-10 text-center">3</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['ausencia_de_rozamiento_con_otros_elementos']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['ausencia_de_rozamiento_con_otros_elementos']),3).'</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-40">Tensado de cables y uso de postes</td>
+                                            <td class="w-10 text-center">3</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['tensado_de_cables_y_uso_de_postes']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['tensado_de_cables_y_uso_de_postes']),3).'</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-40">Acomentida sin empalmes</td>
+                                            <td class="w-10 text-center">4</td>
+                                            <td class="w-10 text-center">'.mostrarRespuesta($value['acometida_sin_empalmes']).'</td>
+                                            <td class="w-10 text-center">'.mostrarPunteo(($value['acometida_sin_empalmes']),4).'</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="cell" colspan="6"></div>
-                        </div>
-                        <div class="row">
-                            <div class="cell-table" colspan="6">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th class="w-20">Área</th>
-                                            <th class="w-10">POND.</th>
-                                            <th class="w-40">Descripción</th>
-                                            <th class="w-10">POND.</th>
-                                            <th class="w-10">Respuesta</th>
-                                            <th class="w-10">Puntos</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="w-20 text-center" rowspan="7">ONT</td>
-                                            <td class="w-10 text-center" rowspan="7">30</td>
-                                            <td class="w-40">Colocación de roseta óptica </td>
-                                            <td class="w-10 text-center">5</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['colocacion_de_roseta_optica']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['colocacion_de_roseta_optica']),5).'</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w-40">Colocación de Patchcore en Roseta óptica /ONT </td>
-                                            <td class="w-10 text-center">5</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['colocacion_de_patchcore_en_roseta_optica_ont']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['colocacion_de_patchcore_en_roseta_optica_ont']),5).'</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w-40">Colocación de ONT en casa del cliente </td>
-                                            <td class="w-10 text-center">5</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['colocacion_de_ont_en_casa_del_cliente']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['colocacion_de_ont_en_casa_del_cliente']),5).'</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w-40">Nivel de potencia óptica en patch cord entrada ONT </td>
-                                            <td class="w-10 text-center">10</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['nivel_de_potencia_optica_en_patch_cord_entrada_ont']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['nivel_de_potencia_optica_en_patch_cord_entrada_ont']),10).'</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w-40">Medición de velocidad en base a lo solicitado por el cliente / Verificación de funcionamienteo de Internet (Velocidad contratada) / telefonía (funcionamiento) / TV (Paquetes contratados)</td>
-                                            <td class="w-10 text-center">10</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['medicion_de_velocidad_en_base_a_lo_solicitado_por_el_cliente_verificacion_de_funcionamienteo_de_internet_velocidad_contratada_telefonia_funcionamiento_tv_paquetes_contratados']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['medicion_de_velocidad_en_base_a_lo_solicitado_por_el_cliente_verificacion_de_funcionamienteo_de_internet_velocidad_contratada_telefonia_funcionamiento_tv_paquetes_contratados']),10).'</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w-40">Colocación de Cables UTP en ONT </td>
-                                            <td class="w-10 text-center">10</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['colocacion_de_cables_utp_en_ont']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['colocacion_de_cables_utp_en_ont']),10).'</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w-40">Colocación de STB en casa del Cliente </td>
-                                            <td class="w-10 text-center">5</td>
-                                            <td class="w-10 text-center">'.mostrarRespuesta($value['colocacion_de_stb_en_casa_del_cliente']).'</td>
-                                            <td class="w-10 text-center">'.mostrarPunteo(($value['colocacion_de_stb_en_casa_del_cliente']),5).'</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        </div>          
+                    </div>
+                    <div class="container">
+                        <div class="cell-table" colspan="6">
+                            <table>
+                            <tbody>
+                            <tr class="bg-secondary">
+                                <td></td>
+                                <td colspan="4" class="w-80 text-center">CLIENTE PERMITE ACCESO</td>
+                                <td class="text-center">'.mostrarRespuesta($value['cliente_permite_acceso']).'</td>
+                            </tr>
+                        </tbody>
+                                <thead>
+                                    <tr>
+                                        <th class="w-20">Área</th>
+                                        <th class="w-10">POND.</th>
+                                        <th class="w-40">Descripción</th>
+                                        <th class="w-10">POND.</th>
+                                        <th class="w-10">Respuesta</th>
+                                        <th class="w-10">Puntos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="w-20 text-center" rowspan="13">ACOMETIDA INTERNA</td>
+                                        <td class="w-10 text-center" rowspan="13">30</td>
+                                        <td class="w-40">Se cambio el cableado</td>
+                                        <td class="w-10 text-center">5</td>
+                                        <td class="w-10 text-center">'.mostrarRespuesta($value['se_cambio_el_cableado']).'</td>
+                                        <td class="w-10 text-center">'.mostrarPunteo(($value['se_cambio_el_cableado']),5).'</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-40">Se utilizo el cable correcto</td>
+                                        <td class="w-10 text-center">3</td>
+                                        <td class="w-10 text-center">'.mostrarRespuesta($value['se_utilizo_el_cable_correcto']).'</td>
+                                        <td class="w-10 text-center">'.mostrarPunteo(($value['se_utilizo_el_cable_correcto']),3).'</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-40">Estetica en la instalación del cableado</td>
+                                        <td class="w-10 text-center">1</td>
+                                        <td class="w-10 text-center">'.mostrarRespuesta($value['estetica_en_la_instalacion_del_cableado']).'</td>
+                                        <td class="w-10 text-center">'.mostrarPunteo(($value['estetica_en_la_instalacion_del_cableado']),1).'</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-40">Se instalaron protectores contra picos (HR y CPE)</td>
+                                        <td class="w-10 text-center">1</td>
+                                        <td class="w-10 text-center">'.mostrarRespuesta($value['se_instalaron_protectores_contra_picos_hr_y_cpe']).'</td>
+                                        <td class="w-10 text-center">'.mostrarPunteo(($value['se_instalaron_protectores_contra_picos_hr_y_cpe']),1).'</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-40">Torqueado de accesorios de distribucion</td>
+                                        <td class="w-10 text-center">1</td>
+                                        <td class="w-10 text-center">'.mostrarRespuesta($value['torqueado_de_accesorios_de_distribucion']).'</td>
+                                        <td class="w-10 text-center">'.mostrarPunteo(($value['torqueado_de_accesorios_de_distribucion']),1).'</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-40">Uso adecuado de grapas</td>
+                                        <td class="w-10 text-center">1</td>
+                                        <td class="w-10 text-center">'.mostrarRespuesta($value['uso_adecuado_de_grapas']).'</td>
+                                        <td class="w-10 text-center">'.mostrarPunteo(($value['uso_adecuado_de_grapas']),1).'</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-40">Uso correcto de divisores de señal, aplica para más de un TV*</td>
+                                        <td class="w-10 text-center">1</td>
+                                        <td class="w-10 text-center">'.mostrarRespuesta($value['uso_correcto_de_divisores_de_senal_aplica_para_mas_de_un_tv']).'</td>
+                                        <td class="w-10 text-center">'.mostrarPunteo(($value['uso_correcto_de_divisores_de_senal_aplica_para_mas_de_un_tv']),1).'</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-40">Correcta aplicacion de conectores</td>
+                                        <td class="w-10 text-center">1</td>
+                                        <td class="w-10 text-center">'.mostrarRespuesta($value['correcta_aplicacion_de_conectores']).'</td>
+                                        <td class="w-10 text-center">'.mostrarPunteo(($value['correcta_aplicacion_de_conectores']),1).'</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-40">Conexión adecuada del STB</td>
+                                        <td class="w-10 text-center">5</td>
+                                        <td class="w-10 text-center">'.mostrarRespuesta($value['conexion_adecuada_del_stb']).'</td>
+                                        <td class="w-10 text-center">'.mostrarPunteo(($value['conexion_adecuada_del_stb']),5).'</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-40">Según OS se cumplio con la cantidad de televisores instalados</td>
+                                        <td class="w-10 text-center">3</td>
+                                        <td class="w-10 text-center">'.mostrarRespuesta($value['segun_os_se_cumplio_con_la_cantidad_de_televisores_instalados']).'</td>
+                                        <td class="w-10 text-center">'.mostrarPunteo(($value['segun_os_se_cumplio_con_la_cantidad_de_televisores_instalados']),3).'</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-40">Según la orden de servicio se dejaron los equipos solicitados (repetidor wifi, DVR)</td>
+                                        <td class="w-10 text-center">2</td>
+                                        <td class="w-10 text-center">'.mostrarRespuesta($value['segun_la_orden_de_servicio_se_dejaron_los_equipos_solicitados_repetidor_wifi_dvr']).'</td>
+                                        <td class="w-10 text-center">'.mostrarPunteo(($value['segun_la_orden_de_servicio_se_dejaron_los_equipos_solicitados_repetidor_wifi_dvr']),2).'</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-40">Conexión y configuración adecuada de cable modem *</td>
+                                        <td class="w-10 text-center">3</td>
+                                        <td class="w-10 text-center">'.mostrarRespuesta($value['conexion_y_configuracion_adecuada_de_cable_modem']).'</td>
+                                        <td class="w-10 text-center">'.mostrarPunteo(($value['conexion_y_configuracion_adecuada_de_cable_modem']),3).'</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-40">El cable modem tiene niveles correctos</td>
+                                        <td class="w-10 text-center">3</td>
+                                        <td class="w-10 text-center">'.mostrarRespuesta($value['el_cable_modem_tiene_niveles_correctos']).'</td>
+                                        <td class="w-10 text-center">'.mostrarPunteo(($value['el_cable_modem_tiene_niveles_correctos']),3).'</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
                         </div>
                         <div class="row">
                             <div class="cell" colspan="6"><br></div>
                         </div>
+
                 ';
 
                 $total = 0
-                + mostrarPunteo(($value['ubicacion_de_puerto_en_base_a_red_asignada']),5)
-                + mostrarPunteo(($value['instalacion_fibra_en_infraestructura_existente_postes']),5)
-                + mostrarPunteo(($value['estetica_general_de_la_instalacion_cableado']),5)
-                + mostrarPunteo(($value['uso_de_conectores_nuevos_normados_por_claro']),10)
-                + mostrarPunteo(($value['nivel_de_potencia_optica_en_puerto_asignado_en_nap']),15)
-                + mostrarPunteo(($value['nivel_de_potencia_optica_en_roseta_optica']),10)
-                + mostrarPunteo(($value['colocacion_de_roseta_optica']),5)
-                + mostrarPunteo(($value['colocacion_de_patchcore_en_roseta_optica_ont']),5)
-                + mostrarPunteo(($value['colocacion_de_ont_en_casa_del_cliente']),5)
-                + mostrarPunteo(($value['nivel_de_potencia_optica_en_patch_cord_entrada_ont']),10)
-                + mostrarPunteo(($value['medicion_de_velocidad_en_base_a_lo_solicitado_por_el_cliente_verificacion_de_funcionamienteo_de_internet_velocidad_contratada_telefonia_funcionamiento_tv_paquetes_contratados']),10)
-                + mostrarPunteo(($value['colocacion_de_cables_utp_en_ont']),10)
-                + mostrarPunteo(($value['colocacion_de_stb_en_casa_del_cliente']),5);
+                + mostrarPunteo(($value['ubicacion_del_tap_rg_500_mas_cerca_del_cliente_por_distancia']),4)
+                + mostrarPunteo(($value['identificacion_de_la_red']),4)
+                + mostrarPunteo(($value['cable_pasa_por_chapa']),2)
+                + mostrarPunteo(($value['utilizo_cincho_id_e_identifico']),2)
+                + mostrarPunteo(($value['curvatura_de_reserva_adecuada']),4)
+                + mostrarPunteo(($value['protectores_de_humedad']),2)
+                + mostrarPunteo(($value['torqueado_en_norma']),3)
+                + mostrarPunteo(($value['utilizo_filtro_pasa_alto_ventana']),2)
+                + mostrarPunteo(($value['correcta_elaboracion_de_conector']),2)
+                + mostrarPunteo(($value['uso_de_abrazaderas_de_remate_aplica_red_aerea']),4)
+                + mostrarPunteo(($value['instalacion_de_cable_correcto_con_mensajero_sin_mensajero']),4)
+                + mostrarPunteo(($value['uso_de_conector_nuevo_normado_por_claro']),4) 
+                + mostrarPunteo(($value['utilizo_remates_y_clip_tipo_s']),3)
+                + mostrarPunteo(($value['ausencia_de_rozamiento_con_otros_elementos']),3)
+                + mostrarPunteo(($value['tensado_de_cables_y_uso_de_postes']),3)
+                + mostrarPunteo(($value['acometida_sin_empalmes']),4)
+                + mostrarPunteo(($value['se_cambio_el_cableado']),5)
+                + mostrarPunteo(($value['se_utilizo_el_cable_correcto']),3)
+                + mostrarPunteo(($value['estetica_en_la_instalacion_del_cableado']),1)
+                + mostrarPunteo(($value['se_instalaron_protectores_contra_picos_hr_y_cpe']),1)
+                + mostrarPunteo(($value['torqueado_de_accesorios_de_distribucion']),1)
+                + mostrarPunteo(($value['uso_adecuado_de_grapas']),1)
+                + mostrarPunteo(($value['uso_correcto_de_divisores_de_senal_aplica_para_mas_de_un_tv']),1)
+                + mostrarPunteo(($value['correcta_aplicacion_de_conectores']),1)
+                + mostrarPunteo(($value['conexion_adecuada_del_stb']),5)
+                + mostrarPunteo(($value['segun_os_se_cumplio_con_la_cantidad_de_televisores_instalados']),3)
+                + mostrarPunteo(($value['segun_la_orden_de_servicio_se_dejaron_los_equipos_solicitados_repetidor_wifi_dvr']),2)
+                + mostrarPunteo(($value['conexion_y_configuracion_adecuada_de_cable_modem']),3)
+                + mostrarPunteo(($value['el_cable_modem_tiene_niveles_correctos']),3);
 
                 $html .= '
                         <div class="row">
                             <div class="cell">Observaciónes: </div>
                             <div class="cell cb" colspan="4">'.$value['observaciones'].'</div>
                             <div class="cell cb text-center">'.$total.'</div>
-                        </div>
-                        <div class="row">
-                            <div class="cell" colspan="6"><br></div>
                         </div>
                     </div>
                 ';
@@ -982,22 +1115,22 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                 }
 
                 if(
-                    ($value['medidor_de_potencia_optica'] != '' && $value['medidor_de_potencia_optica'] != 'N/A')
-                    || ($value['microscopio_optico'] != '' && $value['microscopio_optico'] != 'N/A')
-                    || ($value['etiquetadora'] != '' && $value['etiquetadora'] != 'N/A')
-                    || ($value['tijera_para_cortar_kevlar'] != '' && $value['tijera_para_cortar_kevlar'] != 'N/A')
-                    || ($value['barreno_con_roto_martillo'] != '' && $value['barreno_con_roto_martillo'] != 'N/A')
-                    || ($value['cortadora_fo_angulo_recto'] != '' && $value['cortadora_fo_angulo_recto'] != 'N/A')
-                    || ($value['peladora_de_fo_3_en_1'] != '' && $value['peladora_de_fo_3_en_1'] != 'N/A')
-                    || ($value['cortadora_de_buffer'] != '' && $value['cortadora_de_buffer'] != 'N/A')
-                    || ($value['kit_de_limpieza_para_fibra_optica'] != '' && $value['kit_de_limpieza_para_fibra_optica'] != 'N/A')
-                    || ($value['escalera_de_fibra_de_vidrio_20'] != '' && $value['escalera_de_fibra_de_vidrio_20'] != 'N/A')
-                    || ($value['juego_de_destornilladores_de_castigadera_y_phillips'] != '' && $value['juego_de_destornilladores_de_castigadera_y_phillips'] != 'N/A')
-                    || ($value['juego_de_brocas_para_concreto_y_metal_diferentes_medidas_incluir_broca_pasa_muro'] != '' && $value['juego_de_brocas_para_concreto_y_metal_diferentes_medidas_incluir_broca_pasa_muro'] != 'N/A')
-                    || ($value['extension_electrica_calibre_12'] != '' && $value['extension_electrica_calibre_12'] != 'N/A')
-                    || ($value['guia_acerada_125_con_dispensador'] != '' && $value['guia_acerada_125_con_dispensador'] != 'N/A')
-                    || ($value['guia_pasa_cables_de_fibra_de_vidrio'] != '' && $value['guia_pasa_cables_de_fibra_de_vidrio'] != 'N/A')
-                    || ($value['gancho_para_levantar_tapaderas_pozo_resultado'] != '' && $value['gancho_para_levantar_tapaderas_pozo_resultado'] != 'N/A')
+                    ($value['peladora_rg_6'] != '' && $value['peladora_rg_6'] != 'N/A')
+                    || ($value['ponchadora_rg_6'] != '' && $value['ponchadora_rg_6'] != 'N/A')
+                    || ($value['equipo_de_medicion'] != '' && $value['equipo_de_medicion'] != 'N/A')
+                    || ($value['desarmadores_destornilladores'] != '' && $value['desarmadores_destornilladores'] != 'N/A')
+                    || ($value['escalera'] != '' && $value['escalera'] != 'N/A')
+                    || ($value['lazo_para_asegurar_escalera_a_poste'] != '' && $value['lazo_para_asegurar_escalera_a_poste'] != 'N/A')
+                    || ($value['taladro_tipo_industrial_de_1_2'] != '' && $value['taladro_tipo_industrial_de_1_2'] != 'N/A')
+                    || ($value['extension_electrica_de_15_metros'] != '' && $value['extension_electrica_de_15_metros'] != 'N/A')
+                    || ($value['guia_de_acero_de_30_metros'] != '' && $value['guia_de_acero_de_30_metros'] != 'N/A')
+                    || ($value['broca_pasa_muros_12_pulgadas_1_2_o_3_8'] != '' && $value['broca_pasa_muros_12_pulgadas_1_2_o_3_8'] != 'N/A')
+                    || ($value['llave_quita_trampas'] != '' && $value['llave_quita_trampas'] != 'N/A')
+                    || ($value['herramienta_torquimetro'] != '' && $value['herramienta_torquimetro'] != 'N/A')
+                    || ($value['navaja_curva'] != '' && $value['navaja_curva'] != 'N/A')
+                    || ($value['corta_alambre_de_8'] != '' && $value['corta_alambre_de_8'] != 'N/A')
+                    || ($value['cadena_con_candados_asegurar_escalera_a_vehiculo'] != '' && $value['cadena_con_candados_asegurar_escalera_a_vehiculo'] != 'N/A')
+                    || ($value['inversor_de_voltaje_de_1600_watts'] != '' && $value['inversor_de_voltaje_de_1600_watts'] != 'N/A')
                 ){
 
                     $html .= '
@@ -1070,100 +1203,100 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="w-40">Medidor de Potencia Optica</td>
+                                                    <td class="w-40">Peladora RG-6</td>
                                                     <td class="w-20 text-center">10</td>
-                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['medidor_de_potencia_optica']).'</td>
-                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['medidor_de_potencia_optica']), 10).'</td>
+                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['peladora_rg_6']).'</td>
+                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['peladora_rg_6']), 10).'</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="w-40">Microscopio Optico</td>
+                                                    <td class="w-40">Ponchadora RG-6</td>
                                                     <td class="w-20 text-center">10</td>
-                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['microscopio_optico']).'</td>
-                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['microscopio_optico']), 10).'</td>
+                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['ponchadora_rg_6']).'</td>
+                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['ponchadora_rg_6']), 10).'</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="w-40">Etiquetadora</td>
+                                                    <td class="w-40">Equipo de medición</td>
+                                                    <td class="w-20 text-center">30</td>
+                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['equipo_de_medicion']).'</td>
+                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['equipo_de_medicion']), 30).'</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="w-40">Desarmadores … DESATORNILLADORES</td>
+                                                    <td class="w-20 text-center">3</td>
+                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['desarmadores_destornilladores']).'</td>
+                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['desarmadores_destornilladores']), 3).'</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="w-40">Escalera</td>
                                                     <td class="w-20 text-center">10</td>
-                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['etiquetadora']).'</td>
-                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['etiquetadora']), 10).'</td>
+                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['escalera']).'</td>
+                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['escalera']), 10).'</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="w-40">Tijera Para Cortar Kevlar</td>
-                                                    <td class="w-20 text-center">10</td>
-                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['tijera_para_cortar_kevlar']).'</td>
-                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['tijera_para_cortar_kevlar']), 10).'</td>
+                                                    <td class="w-40">Lazo (para asegurar escalera a poste)</td>
+                                                    <td class="w-20 text-center">5</td>
+                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['lazo_para_asegurar_escalera_a_poste']).'</td>
+                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['lazo_para_asegurar_escalera_a_poste']), 5).'</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="w-40">Barreno Con Roto Martillo</td>
-                                                    <td class="w-20 text-center">10</td>
-                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['barreno_con_roto_martillo']).'</td>
-                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['barreno_con_roto_martillo']), 10).'</td>
+                                                    <td class="w-40">Taladro tipo industrial de 1/2"</td>
+                                                    <td class="w-20 text-center">5</td>
+                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['taladro_tipo_industrial_de_1_2']).'</td>
+                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['taladro_tipo_industrial_de_1_2']), 5).'</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="w-40">Cortadora FO Angulo Recto</td>
-                                                    <td class="w-20 text-center">8</td>
-                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['cortadora_fo_angulo_recto']).'</td>
-                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['cortadora_fo_angulo_recto']), 8).'</td>
+                                                    <td class="w-40">Extensión eléctrica de 15 metros</td>
+                                                    <td class="w-20 text-center">2</td>
+                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['extension_electrica_de_15_metros']).'</td>
+                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['extension_electrica_de_15_metros']), 2).'</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="w-40">Peladora de F.O 3 En 1</td>
-                                                    <td class="w-20 text-center">7</td>
-                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['peladora_de_fo_3_en_1']).'</td>
-                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['peladora_de_fo_3_en_1']), 7).'</td>
+                                                    <td class="w-40">Guia de acero de 30 metros </td>
+                                                    <td class="w-20 text-center">5</td>
+                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['guia_de_acero_de_30_metros']).'</td>
+                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['guia_de_acero_de_30_metros']), 5).'</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="w-40">Cortadora de Buffer</td>
-                                                    <td class="w-20 text-center">7</td>
-                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['cortadora_de_buffer']).'</td>
-                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['cortadora_de_buffer']), 7).'</td>
+                                                    <td class="w-40">Broca pasa muros 12 pulgadas * 1/2 o 3/8</td>
+                                                    <td class="w-20 text-center">5</td>
+                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['broca_pasa_muros_12_pulgadas_1_2_o_3_8']).'</td>
+                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['broca_pasa_muros_12_pulgadas_1_2_o_3_8']), 5).'</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="w-40">Kit de Limpieza Para Fibra Óptica</td>
-                                                    <td class="w-20 text-center">7</td>
-                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['kit_de_limpieza_para_fibra_optica']).'</td>
-                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['kit_de_limpieza_para_fibra_optica']), 7).'</td>
+                                                    <td class="w-40">Llave quita trampas</td>
+                                                    <td class="w-20 text-center">2</td>
+                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['llave_quita_trampas']).'</td>
+                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['llave_quita_trampas']), 2).'</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="w-40">Escalera de Fibra de Vidrio 20´</td>
-                                                    <td class="w-20 text-center">3</td>
-                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['escalera_de_fibra_de_vidrio_20']).'</td>
-                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['escalera_de_fibra_de_vidrio_20']), 3).'</td>
+                                                    <td class="w-40">Herramienta Torquimetro</td>
+                                                    <td class="w-20 text-center">5</td>
+                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['herramienta_torquimetro']).'</td>
+                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['herramienta_torquimetro']), 5).'</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="w-40">Juego de destornilladores de Castigadera y Phillips</td>
-                                                    <td class="w-20 text-center">3</td>
-                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['juego_de_destornilladores_de_castigadera_y_phillips']).'</td>
-                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['juego_de_destornilladores_de_castigadera_y_phillips']), 3).'</td>
+                                                    <td class="w-40">Navaja curva</td>
+                                                    <td class="w-20 text-center">2</td>
+                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['navaja_curva']).'</td>
+                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['navaja_curva']), 2).'</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="w-40">Juego de Brocas Para Concreto Y Metal Diferentes Medidas (Incluir Broca Pasa Muro)</td>
-                                                    <td class="w-20 text-center">3</td>
-                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['juego_de_brocas_para_concreto_y_metal_diferentes_medidas_incluir_broca_pasa_muro']).'</td>
-                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['juego_de_brocas_para_concreto_y_metal_diferentes_medidas_incluir_broca_pasa_muro']), 3).'</td>
+                                                    <td class="w-40">Corta alambre de 8"</td>
+                                                    <td class="w-20 text-center">2</td>
+                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['corta_alambre_de_8']).'</td>
+                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['corta_alambre_de_8']), 2).'</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="w-40">Extension Electrica Calibre 12</td>
-                                                    <td class="w-20 text-center">3</td>
-                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['extension_electrica_calibre_12']).'</td>
-                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['extension_electrica_calibre_12']), 3).'</td>
+                                                    <td class="w-40">Cadena con conadados (aegurar escalera a vehículo)</td>
+                                                    <td class="w-20 text-center">2</td>
+                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['cadena_con_candados_asegurar_escalera_a_vehiculo']).'</td>
+                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['cadena_con_candados_asegurar_escalera_a_vehiculo']), 2).'</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="w-40">Guía Acerada 125´ Con Dispensador</td>
-                                                    <td class="w-20 text-center">3</td>
-                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['guia_acerada_125_con_dispensador']).'</td>
-                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['guia_acerada_125_con_dispensador']), 3).'</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="w-40">Guía Pasa Cables de Fibra de Vidrio</td>
-                                                    <td class="w-20 text-center">3</td>
-                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['guia_pasa_cables_de_fibra_de_vidrio']).'</td>
-                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['guia_pasa_cables_de_fibra_de_vidrio']), 3).'</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="w-40">Gancho Para Levantar Tapaderas Pozo - Resultado</td>
-                                                    <td class="w-20 text-center">3</td>
-                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['gancho_para_levantar_tapaderas_pozo_resultado']).'</td>
-                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['gancho_para_levantar_tapaderas_pozo_resultado']), 3).'</td>
+                                                    <td class="w-40">Inversor de voltage de 1,600 watts</td>
+                                                    <td class="w-20 text-center">2</td>
+                                                    <td class="w-20 text-center">'.mostrarRespuesta($value['inversor_de_voltaje_de_1600_watts']).'</td>
+                                                    <td class="w-20 text-center">'.mostrarPunteo(($value['inversor_de_voltaje_de_1600_watts']), 2).'</td>
                                                 </tr>
                         ';
             
