@@ -99,7 +99,7 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
         $i = 3;
         $data = array();
 
-        while ($sheet->getCell('J' . $i)->getCalculatedValue() != '') {
+        while ($sheet->getCell('A' . $i)->getCalculatedValue() != '') {
 
             $registro = array();
             foreach ($columnas as $key => $value) {
@@ -452,25 +452,6 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                             <div class="row">
                                 <div class="cell text-center">
                                     <img src="'.$value['tercer_archivo'].'" class="evidencia">
-                                </div>
-                            </div>
-                        </div>
-                    ';
-                }
-
-                if($value['cuarto_archivo'] != ''){
-
-                    $html .= '
-                        <div style="page-break-after:always;"></div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="cell">
-                                    <img src="../src/assets/img/logo.png" style="width:80px;">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="cell text-center">
-                                    <img src="'.$value['cuarto_archivo'].'" class="evidencia">
                                 </div>
                             </div>
                         </div>

@@ -81,33 +81,31 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
             "BH" => "pantalon",
             "BI" => "botas",
             "BJ" => "gafete",
-            "BK" => "faja_cincho",
-            "BL" => "chaleco_preventivo",
-            "BM" => "casco_de_proteccion",
-            "BN" => "guantes_de_cuero",
-            "BO" => "capa_impermeable",
-            "BP" => "aspecto_personal",
-            "BQ" => "logotipo_de_empresa",
-            "BR" => "carroceria",
-            "BS" => "porta_escalera",
-            "BT" => "estado_de_neumaticos",
-            "BU" => "rotulado_de_unidad",
-            "BV" => "orden_y_limpieza",
-            "BW" => "tecnico_certificado_por_claro",
-            "BX" => "direccion_de_correo_electronico",
-            "BY" => "evidencia_fotografica",
-            "BZ" => "segundo_archivo",
-            "CA" => "tercer_archivo",
-            "CB" => "cuarto_archivo",
-            "CC" => "calidad_tecnica",
-            "CD" => "herramienta",
-            "CE" => "uniforme",
-            "CF" => "vehiculo",
-            "CG" => "tecnico_certificado",
-            "CH" => "no_supervision",
-            "CI" => "tecnologia",
-            "CJ" => "supervisor",
-            "CK" => "observaciones"
+            "BK" => "faja",
+            "BL" => "cinturon_de_seguridad_con_amarre_a_poste",
+            "BM" => "chaleco_preventivo",
+            "BN" => "casco_de_proteccion",
+            "BO" => "guantes_de_cuero",
+            "BP" => "capa_impermeable",
+            "BQ" => "aspecto_personal",
+            "BR" => "logotipo_de_empresa",
+            "BS" => "carroceria",
+            "BT" => "porta_escalera",
+            "BU" => "estado_de_neumaticos",
+            "BV" => "rotulado_de_unidad",
+            "BW" => "orden_y_limpieza",
+            "BX" => "tercer_archivo",
+            "BY" => "tecnico_certificado_por_claro",
+            "BZ" => "cuarto_archivo",
+            "CA" => "calidad_tecnica",
+            "CB" => "herramienta",
+            "CC" => "uniforme",
+            "CD" => "vehiculo",
+            "CE" => "tecnico_certificado",
+            "CF" => "no_supervision",
+            "CG" => "tecnologia",
+            "CH" => "supervisor",
+            "CI" => "observaciones"
         );
 
         $i = 3;
@@ -562,12 +560,12 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
 
                 if (($value['camisa'] != '' && $value['camisa'] != 'N/A') 
                     || ($value['pantalon'] != '' && $value['pantalon'] != 'N/A')
-                    || ($value['botas_industriales'] != '' && $value['botas_industriales'] != 'N/A')
+                    || ($value['botas'] != '' && $value['botas'] != 'N/A')
                     || ($value['gafete'] != '' && $value['gafete'] != 'N/A')
-                    || ($value['faja_cincho'] != '' && $value['faja_cincho'] != 'N/A')
-                    || ($value['cinturon_de_seguridad_para_amarre_a_poste'] != '' && $value['cinturon_de_seguridad_para_amarre_a_poste'] != 'N/A')
+                    || ($value['faja'] != '' && $value['faja'] != 'N/A')
+                    || ($value['cinturon_de_seguridad_con_amarre_a_poste'] != '' && $value['cinturon_de_seguridad_con_amarre_a_poste'] != 'N/A')
                     || ($value['chaleco_preventivo'] != '' && $value['chaleco_preventivo'] != 'N/A')
-                    || ($value['casco'] != '' && $value['casco'] != 'N/A')
+                    || ($value['casco_de_proteccion'] != '' && $value['casco_de_proteccion'] != 'N/A')
                     || ($value['guantes_de_cuero'] != '' && $value['guantes_de_cuero'] != 'N/A')
                     || ($value['capa_impermeable'] != '' && $value['capa_impermeable'] != 'N/A')
                     || ($value['aspecto_personal'] != '' && $value['aspecto_personal'] != 'N/A')
@@ -647,12 +645,12 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                     if(
                         ($value['camisa'] != '' && $value['camisa'] != 'N/A') 
                         || ($value['pantalon'] != '' && $value['pantalon'] != 'N/A')
-                        || ($value['botas_industriales'] != '' && $value['botas_industriales'] != 'N/A')
+                        || ($value['botas'] != '' && $value['botas'] != 'N/A')
                         || ($value['gafete'] != '' && $value['gafete'] != 'N/A')
-                        || ($value['faja_cincho'] != '' && $value['faja_cincho'] != 'N/A')
-                        || ($value['cinturon_de_seguridad_para_amarre_a_poste'] != '' && $value['cinturon_de_seguridad_para_amarre_a_poste'] != 'N/A')
+                        || ($value['faja'] != '' && $value['faja'] != 'N/A')
+                        || ($value['cinturon_de_seguridad_con_amarre_a_poste'] != '' && $value['cinturon_de_seguridad_con_amarre_a_poste'] != 'N/A')
                         || ($value['chaleco_preventivo'] != '' && $value['chaleco_preventivo'] != 'N/A')
-                        || ($value['casco'] != '' && $value['casco'] != 'N/A')
+                        || ($value['casco_de_proteccion'] != '' && $value['casco_de_proteccion'] != 'N/A')
                         || ($value['guantes_de_cuero'] != '' && $value['guantes_de_cuero'] != 'N/A')
                         || ($value['capa_impermeable'] != '' && $value['capa_impermeable'] != 'N/A')
                         || ($value['aspecto_personal'] != '' && $value['aspecto_personal'] != 'N/A')
@@ -686,8 +684,8 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                                             <tr>
                                                 <td class="w-40">Botas Industriales</td>
                                                 <td class="w-20 text-center">15</td>
-                                                <td class="w-20 text-center">'.mostrarRespuesta($value['botas_industriales']).'</td>
-                                                <td class="w-20 text-center">'.mostrarPunteo(($value['botas_industriales']),15).'</td>
+                                                <td class="w-20 text-center">'.mostrarRespuesta($value['botas']).'</td>
+                                                <td class="w-20 text-center">'.mostrarPunteo(($value['botas']),15).'</td>
                                             </tr>
                                             <tr>
                                                 <td class="w-40">Gafete</td>
@@ -696,17 +694,17 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                                                 <td class="w-20 text-center">'.mostrarPunteo(($value['gafete']),15).'</td>
                                             </tr>
                                             <tr>
-                                                <td class="w-40">Faja (Cincho)</td>
+                                                <td class="w-40">Faja</td>
                                                 <td class="w-20 text-center">5</td>
-                                                <td class="w-20 text-center">'.mostrarRespuesta($value['faja_cincho']).'</td>
-                                                <td class="w-20 text-center">'.mostrarPunteo(($value['faja_cincho']),5).'</td>
+                                                <td class="w-20 text-center">'.mostrarRespuesta($value['faja']).'</td>
+                                                <td class="w-20 text-center">'.mostrarPunteo(($value['faja']),5).'</td>
                                             </tr>
 
                                             <tr>
                                             <td class="w-40">Cinturón de seguridad para amarre a poste</td>
                                                 <td class="w-20 text-center">10</td>
-                                                <td class="w-20 text-center">'.mostrarRespuesta($value['cinturon_de_seguridad_para_amarre_a_poste']).'</td>
-                                                <td class="w-20 text-center">'.mostrarPunteo(($value['cinturon_de_seguridad_para_amarre_a_poste']),10).'</td>
+                                                <td class="w-20 text-center">'.mostrarRespuesta($value['cinturon_de_seguridad_con_amarre_a_poste']).'</td>
+                                                <td class="w-20 text-center">'.mostrarPunteo(($value['cinturon_de_seguridad_con_amarre_a_poste']),10).'</td>
                                             </tr>
                                             <tr>
                                                 <td class="w-40">Chaleco preventivo</td>
@@ -715,10 +713,10 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                                                 <td class="w-20 text-center">'.mostrarPunteo(($value['chaleco_preventivo']),5).'</td>
                                             </tr>
                                             <tr>
-                                                <td class="w-40">Casco</td>
+                                                <td class="w-40">casco_de_proteccion</td>
                                                 <td class="w-20 text-center">10</td>
-                                                <td class="w-20 text-center">'.mostrarRespuesta($value['casco']).'</td>
-                                                <td class="w-20 text-center">'.mostrarPunteo(($value['casco']),10).'</td>
+                                                <td class="w-20 text-center">'.mostrarRespuesta($value['casco_de_proteccion']).'</td>
+                                                <td class="w-20 text-center">'.mostrarPunteo(($value['casco_de_proteccion']),10).'</td>
                                             </tr>
                                             <tr>
                                                 <td class="w-40">Guantes de cuero</td>
@@ -743,12 +741,12 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                         $total = 0 
                         + mostrarPunteo(($value['camisa']),10)
                         + mostrarPunteo(($value['pantalon']),10)
-                        + mostrarPunteo(($value['botas_industriales']),15)
+                        + mostrarPunteo(($value['botas']),15)
                         + mostrarPunteo(($value['gafete']),15)
-                        + mostrarPunteo(($value['faja_cincho']),5)
-                        + mostrarPunteo(($value['cinturon_de_seguridad_para_amarre_a_poste']),10)
+                        + mostrarPunteo(($value['faja']),5)
+                        + mostrarPunteo(($value['cinturon_de_seguridad_con_amarre_a_poste']),10)
                         + mostrarPunteo(($value['chaleco_preventivo']),5)
-                        + mostrarPunteo(($value['casco']),10)
+                        + mostrarPunteo(($value['casco_de_proteccion']),10)
                         + mostrarPunteo(($value['guantes_de_cuero']),5)
                         + mostrarPunteo(($value['capa_impermeable']),5)
                         + mostrarPunteo(($value['aspecto_personal']),10);
@@ -934,7 +932,7 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                                                         <td class="w-20 text-center"></td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="w-40">Casco</td>
+                                                        <td class="w-40">casco_de_proteccion</td>
                                                         <td class="w-20 text-center">10</td>
                                                         <td class="w-20 text-center"></td>
                                                         <td class="w-20 text-center"></td>
@@ -1301,22 +1299,22 @@ if ($tipo_archivo == "application/vnd.openxmlformats-officedocument.spreadsheetm
                         ';
             
                         $total = 0 
-                        + mostrarPunteo(($value['medidor_de_potencia_optica']), 10)
-                        + mostrarPunteo(($value['microscopio_optico']), 10)
-                        + mostrarPunteo(($value['etiquetadora']), 10)
-                        + mostrarPunteo(($value['tijera_para_cortar_kevlar']), 10)
-                        + mostrarPunteo(($value['barreno_con_roto_martillo']), 10)
-                        + mostrarPunteo(($value['cortadora_fo_angulo_recto']), 8)
-                        + mostrarPunteo(($value['peladora_de_fo_3_en_1']), 7)
-                        + mostrarPunteo(($value['cortadora_de_buffer']), 7)
-                        + mostrarPunteo(($value['kit_de_limpieza_para_fibra_optica']), 7)
-                        + mostrarPunteo(($value['escalera_de_fibra_de_vidrio_20']), 3)
-                        + mostrarPunteo(($value['juego_de_destornilladores_de_castigadera_y_phillips']), 3)
-                        + mostrarPunteo(($value['juego_de_brocas_para_concreto_y_metal_diferentes_medidas_incluir_broca_pasa_muro']), 3)
-                        + mostrarPunteo(($value['extension_electrica_calibre_12']), 3)
-                        + mostrarPunteo(($value['guia_acerada_125_con_dispensador']), 3)
-                        + mostrarPunteo(($value['guia_pasa_cables_de_fibra_de_vidrio']), 3)
-                        + mostrarPunteo(($value['gancho_para_levantar_tapaderas_pozo_resultado']), 3);
+                        + mostrarPunteo(($value['peladora_rg_6']), 10)
+                        + mostrarPunteo(($value['ponchadora_rg_6']), 10)
+                        + mostrarPunteo(($value['equipo_de_medicion']), 30)
+                        + mostrarPunteo(($value['desarmadores_destornilladores']), 3)
+                        + mostrarPunteo(($value['escalera']), 10)
+                        + mostrarPunteo(($value['lazo_para_asegurar_escalera_a_poste']), 5)
+                        + mostrarPunteo(($value['taladro_tipo_industrial_de_1_2']), 5)
+                        + mostrarPunteo(($value['extension_electrica_de_15_metros']), 2)
+                        + mostrarPunteo(($value['guia_de_acero_de_30_metros']), 5)
+                        + mostrarPunteo(($value['broca_pasa_muros_12_pulgadas_1_2_o_3_8']), 5)
+                        + mostrarPunteo(($value['llave_quita_trampas']), 2)
+                        + mostrarPunteo(($value['herramienta_torquimetro']), 5)
+                        + mostrarPunteo(($value['navaja_curva']), 2)
+                        + mostrarPunteo(($value['corta_alambre_de_8']), 2)
+                        + mostrarPunteo(($value['cadena_con_candados_asegurar_escalera_a_vehiculo']), 2)
+                        + mostrarPunteo(($value['inversor_de_voltaje_de_1600_watts']), 2);
                                                 
                         $html .= '
                                                 <tr>
